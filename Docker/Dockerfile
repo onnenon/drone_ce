@@ -13,4 +13,10 @@ COPY --from=builder /opt/drone-server /
 EXPOSE 80 443
 VOLUME /data
 
+ENV DRONE_DATABASE_DATASOURCE /data/database.sqlite
+ENV DRONE_RUNNER_OS=linux
+ENV DRONE_RUNNER_ARCH=arm64
+ENV DRONE_SERVER_PORT=:80
+ENV DRONE_SERVER_HOST=localhost
+
 ENTRYPOINT [ "/drone-server" ]
