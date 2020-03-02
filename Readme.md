@@ -1,1 +1,1 @@
-# Community edition Dockerfile for Drone CI
+# Community Edition Dockerfile for Drone CI
